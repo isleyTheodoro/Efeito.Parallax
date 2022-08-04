@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    margin: 0 ;
+    font: 16px "lato", sans-serif;       /* AQUI ESTOU COLOCANDO AS IMAGENS COM A ALTURA DE 100% POS ESSE É O EFEITO DO PARALAX  */
+    color: #777;
+    height: 100%;
+}
+.conteudo-1, .conteudo-2, .conteudo-3, .conteudo-4, .conteudo-5{
+    color: #777;
+    background-color: white;
+    text-align: justify;    /* AQUI ESTOU DEIXANDO O CONTEUDO JUSTIFICADO POIS MEU "H3" OU QUALQUER OUTRO H, VAO TER O TEXTO NO CENTER COM TEXT ALINGN ="CENTER" */
+    padding: 50px 80px;
+}
+h3{
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;    /* AQUI AGORA EU CENTRALIZO O TEXTO OU O CABEÇALHOS NA CAIXA EU DEIXO COMO TEXT ALIGN =JUSTIFY E NO TEXTO EU DEIXO COM TEXT ALIGN=CENTER */
+}
+p{
+    margin-bottom: 20px;
+    padding: 10px;
+    letter-spacing: 0.9px; /* SERVE PARA DAR ESPAÇAMENTO ESTR OS TEXTOS */
+}
+
+
+/* ======= inicio dos efeitos do parallax=========*/
+
+.caixa-1, .caixa-2, .caixa-3, .caixa-4, .caixa-5, .caixa-6{ /* AQUI EU ESTOU FORMATANDO TODAS AS CAIXA ONDE TEM AS IMAGENS */
+    height: 100%;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* SERVE PARA DEIXAR O EFEITO DO PARALLAX NAS IMAGENS ASSIM QUE VC ROLA A PAGINA PRA BAIXO A IMAGEN FICA FIXA E O TEXTO SOBE E MUDA DE IMAGENS */
+    position: relative;     /* SEMPRE QUE FOR USAR ALGUMA POSIÇAO ABSOLUTA NA CAIXA OU CONTAINER FILHO, NO CONTAINER PAI OU CAIXA PAI, SE USA O "POSITION=RELATIVE"
+}
+.caixa-1{   /* AQUI ESTOU COLOCANDO AS IMAGENS COM A ALTURA DE 100% POS ESSE É O EFEITO DO PARALAX ESSE EFEITO TEM QUE SER COLOCADO NO BODY E HTML */
+    background-image: url(../img/imagem1.jpg);
+    height: 100%;
+}
+.caixa-2{
+    background-image: url(../img/imagem2.jpg);
+    height: 100%;
+}
+.caixa-3{
+    background-image:url(../img/imagem3.jpg);
+    height: 100%;
+}
+.caixa-4{
+    background-image: url(../img/imagem4.jpg);
+    height: 100%;
+}
+.caixa-5{
+    background-image: url(../img/imagem5.jpg);
+    height: 100%;
+}
+.caixa-6{
+    background-image: url(../img/imagem6.jpg);
+    height: 100%;
+}
+
+.conteudo-titulo{
+    position: absolute;   /* AQUI EU USO A POSIÇÃO ABSOLUTA POIS O MEU CONTAINER PAI OU A CAIXA PAI, ESTA COM A POSIÇÃO RELATIVA ASSIM ESSA CAIXA SEMPRE VAI FICAR POR CIMA DAQUELA OUTRA CAIXA */
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+  
+}
+
+.conteudo-titulo span.titulo{
+    color: #fff;
+    background: #111;
+    padding:18px;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing:5px ;    /* serve para dar espaçamentos entre os textos */ 
+}
